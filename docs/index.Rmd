@@ -54,12 +54,12 @@ background-size: cover
 
 - plumber 소개
     - 함수 정의 방식의 api 작성
-    - 시리얼라이저
-    - 테스트 usethis + testthat
+    - Serializers 
+    - 테스트 방법
     - 배포 방법
 
 - 머신러닝 서비스를 위해
-    - DataOps 소개
+    - DataOps 란
     - 지속적 학습 모델을 위한 구조
 
 - 마치며
@@ -70,7 +70,7 @@ class: split-40
 # 발표자 소개
 
 .column[
-.content.center[
+.content.right[
 <br>
 <br> 
 <br>
@@ -104,7 +104,239 @@ class: split-40
 class: title-color1
 layout: false
 
-# 목차
+### 오늘 하고 싶은 이야기는 <U>plumber 패키지 소개</U>
+
+---
+
+class: title-color1
+layout: false
+
+# 데이터 과학자
+
+---
+class: title-color2
+layout: false
+
+# 데이터 과학자란
+
+---
+layout: true
+background-image: url(https://user-images.githubusercontent.com/6179259/48409183-7b941d00-e77e-11e8-81c8-9bf0a8e68792.png)
+background-size: cover
+---
+
+# 데이터 과학자란
+
+## 내용
+
+---
+class: title-color2
+layout: false
+
+# 데이터 과학자가 하는 일
+
+---
+layout: true
+background-image: url(https://user-images.githubusercontent.com/6179259/48409183-7b941d00-e77e-11e8-81c8-9bf0a8e68792.png)
+background-size: cover
+---
+
+# 데이터 과학자가 하는 일
+
+## 내용
+
+
+---
+class: title-color2
+layout: false
+
+# R 과 생태계 소개
+
+---
+layout: true
+background-image: url(https://user-images.githubusercontent.com/6179259/48409183-7b941d00-e77e-11e8-81c8-9bf0a8e68792.png)
+background-size: cover
+---
+
+# R 과 생태계 소개
+
+## 내용
+
+
+---
+
+class: title-color1
+layout: false
+
+# 커뮤니케이션
+
+---
+class: title-color2
+layout: false
+
+# 휴먼 리더블한 R 도구
+
+---
+layout: true
+background-image: url(https://user-images.githubusercontent.com/6179259/48409183-7b941d00-e77e-11e8-81c8-9bf0a8e68792.png)
+background-size: cover
+---
+
+# 휴먼 리더블한 R 도구
+
+## 내용
+
+
+
+---
+class: title-color2
+layout: false
+
+# 머신 리더블한 api 서버
+
+---
+layout: true
+background-image: url(https://user-images.githubusercontent.com/6179259/48409183-7b941d00-e77e-11e8-81c8-9bf0a8e68792.png)
+background-size: cover
+---
+
+# 머신 리더블한 api 서버
+
+## 내용
+
+
+---
+
+class: title-color1
+layout: false
+
+# plumber 소개
+
+---
+class: title-color2
+layout: false
+
+# 함수 정의 방식의 api 작성
+
+---
+layout: true
+background-image: url(https://user-images.githubusercontent.com/6179259/48409183-7b941d00-e77e-11e8-81c8-9bf0a8e68792.png)
+background-size: cover
+---
+
+# 함수 정의 방식의 api 작성
+
+## 내용
+
+
+---
+class: title-color2
+layout: false
+
+# Serializers 
+
+---
+layout: true
+background-image: url(https://user-images.githubusercontent.com/6179259/48409183-7b941d00-e77e-11e8-81c8-9bf0a8e68792.png)
+background-size: cover
+---
+
+# Serializers 
+
+## 내용
+
+
+---
+class: title-color2
+layout: false
+
+# 테스트 방법
+
+---
+layout: true
+background-image: url(https://user-images.githubusercontent.com/6179259/48409183-7b941d00-e77e-11e8-81c8-9bf0a8e68792.png)
+background-size: cover
+---
+
+# 테스트 방법
+
+## 내용
+
+
+---
+class: title-color2
+layout: false
+
+# 배포 방법
+
+---
+layout: true
+background-image: url(https://user-images.githubusercontent.com/6179259/48409183-7b941d00-e77e-11e8-81c8-9bf0a8e68792.png)
+background-size: cover
+---
+
+# 배포 방법
+
+## 내용
+
+
+---
+
+class: title-color1
+layout: false
+
+# 머신러닝 서비스를 위해
+
+---
+class: title-color2
+layout: false
+
+# DataOps란
+
+---
+layout: true
+background-image: url(https://user-images.githubusercontent.com/6179259/48409183-7b941d00-e77e-11e8-81c8-9bf0a8e68792.png)
+background-size: cover
+---
+
+# DataOps란 
+
+## 내용
+
+
+---
+class: title-color2
+layout: false
+
+# 지속적 학습 모델을 위한 구조
+
+---
+layout: true
+background-image: url(https://user-images.githubusercontent.com/6179259/48409183-7b941d00-e77e-11e8-81c8-9bf0a8e68792.png)
+background-size: cover
+---
+
+# 지속적 학습 모델을 위한 구조
+
+## 내용
+
+
+---
+
+class: title-color1
+layout: false
+
+# 마치며
+
+---
+layout: true
+background-image: url(https://user-images.githubusercontent.com/6179259/48409183-7b941d00-e77e-11e8-81c8-9bf0a8e68792.png)
+background-size: cover
+---
+
+# 마치며
+
+## 내용
 
 
 
@@ -112,6 +344,11 @@ layout: false
 
 
 
+
+
+---
+![](https://cdn-images-1.medium.com/max/1000/1*6dNQ6368kw6bZlG_mtAxgg.png)
+---
 
 
 
