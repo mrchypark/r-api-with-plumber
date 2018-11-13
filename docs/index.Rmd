@@ -5,7 +5,7 @@ date: "2018년 11월 14일"
 output:
   xaringan::moon_reader:
     seal: false
-    css: ["default", "custom.css"]
+    css: ["default", "custom.css", "ninjutsu"]
     lib_dir: libs
     includes:
       in_header: google_analytics.html
@@ -25,6 +25,103 @@ knitr::opts_chunk$set(cache = T, fig.height = 5)
 
 
 class: ftitle-slide
+---
+layout: true
+
+background-image: url(https://user-images.githubusercontent.com/6179259/48409183-7b941d00-e77e-11e8-81c8-9bf0a8e68792.png)
+background-size: cover
+
+---
+
+## 목차
+
+.pull-left[
+
+- 발표자 소개
+
+- 데이터 과학자
+    - 데이터 과학자란
+    - 데이터 과학자가 하는 일
+    - R 과 생태계 소개
+
+- 커뮤니케이션
+    - 휴먼 리더블한 R 도구
+    - 머신 리더블한 api 서버
+
+]
+
+.pull-right[
+
+- plumber 소개
+    - 함수 정의 방식의 api 작성
+    - 시리얼라이저
+    - 테스트 usethis + testthat
+    - 배포 방법
+
+- 머신러닝 서비스를 위해
+    - DataOps 소개
+    - 지속적 학습 모델을 위한 구조
+
+- 마치며
+]
+
+---
+class: split-40
+# 발표자 소개
+
+.column[
+.content.center[
+<br>
+<br> 
+<br>
+<br>
+<br>
+  ![](https://avatars2.githubusercontent.com/u/6179259?v=4&s=300)
+]]
+
+.column[
+.content[
+<br>
+<br>
+### 박찬엽     
+- .yellow[(현)]코빗 재무팀 데이터 담당자
+  * 재무DB 구축/관리 및 자동화
+- .gray[(전)]서울도시가스 선행연구팀 연구원
+  * 챗봇 엔진 개발 및 서버 구축
+- .gray[(전)]2017년 패스트 캠퍼스 데이터 분석 R 강의
+  * [데이터 분석을 위한 중급 R 프로그래밍](http://www.fastcampus.co.kr/data_camp_dabrp/)
+- N사 뉴스 크롤러 [N2H4](https://github.com/forkonlp/N2H4), D사 뉴스 크롤러 [DNH4](https://github.com/forkonlp/DNH4) 관리자
+  * [ForkonLP](https://forkonlp.github.io/) 프로젝트
+  
+
+- .blue[**FACEBOOK**]@[mrchypark](https://www.facebook.com/mrchypark)
+- .gray[**GITHUB**]@[mrchypark](https://github.com/mrchypark)
+]]
+
+
+---
+
+class: title-color1
+layout: false
+
+# 목차
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 
