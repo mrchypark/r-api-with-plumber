@@ -84,6 +84,23 @@ html, body, h1, h2, h3, h4, h5, h6, li, p {font-family:'Spoqa Han Sans';}
   line-height: 1em;
 }
 
+.title-color1 h4 {
+  text-shadow: none;
+  color: #00d6cc;
+  font-size: 2em;
+  font-weight: normal;
+  margin-left: -0.3em;
+  margin-right: 3em;
+  line-height: 1em;
+}
+
+.title-color1 h5 {
+  text-shadow: none;
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+
 .title-color2{
   background-image: url(https://user-images.githubusercontent.com/6179259/48408914-d711db00-e77d-11e8-896a-7d2d61b7f22b.png);
   background-size: cover;
