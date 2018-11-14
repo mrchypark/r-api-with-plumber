@@ -6,6 +6,8 @@
     <meta name="author" content="박찬엽" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/ninjutsu.css" rel="stylesheet" />
+    <link href="libs/font-awesome-animation/font-awesome-animation-emi.css" rel="stylesheet" />
+    <script src="libs/fontawesome/js/fontawesome-all.min.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -120,14 +122,70 @@ layout: false
 # 데이터 과학자란
 
 ---
+layout: false
+.pull-center[.set[
+![](http://t1.daumcdn.net/brunch/service/user/NjN/image/uZgY-zp5iTAgUNoqGWmbYfLxE2k.png)
+]]
+
+---
 layout: true
 background-image: url(https://user-images.githubusercontent.com/6179259/48409183-7b941d00-e77e-11e8-81c8-9bf0a8e68792.png)
 background-size: cover
 ---
 
 # 데이터 과학자란
+&lt;br&gt;
+![](http://t1.daumcdn.net/brunch/service/user/NjN/image/Zh5hsVBBSpDgD7EPlzr4V3W5Nmw.jpg)
 
-## 내용
+
+.footer[출처 : &lt;https://brunch.co.kr/@hero4earth/3&gt;]
+
+
+---
+# 데이터 과학자란
+
+&lt;br&gt;
+![](https://user-images.githubusercontent.com/6179259/48439784-79f04680-e7ca-11e8-8271-14353eefba5b.png)
+
+---
+class: title-color3
+layout: false
+
+### 연구를 통하여 과학 지식을 탐구하기 위해 
+### &lt;U&gt;통계 지식이 필요&lt;/U&gt;합니다.
+
+---
+layout: true
+background-image: url(https://user-images.githubusercontent.com/6179259/48409183-7b941d00-e77e-11e8-81c8-9bf0a8e68792.png)
+background-size: cover
+
+---
+# 데이터 과학자란
+
+.pull-left[
+### 과학자
+
+데이터 확보가 어려움
+
+- 실험
+- 설문
+
+]
+.pull-right[
+### 데이터 과학자
+
+디지털화된 데이터를 확보
+
+- A/B 테스트
+- 사용자 로그
+]
+
+---
+class: title-color1
+layout: false
+
+### 이제, 연구를 통하여 과학 지식을 탐구하기 위해 
+### &lt;U&gt;개발 지식이 필요&lt;/U&gt;합니다.
 
 ---
 class: title-color2
@@ -142,9 +200,17 @@ background-size: cover
 ---
 
 # 데이터 과학자가 하는 일
-
-## 내용
-
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+.content.center[
+![](https://r4ds.had.co.nz/diagrams/data-science.png)
+]
+&lt;br&gt;
+&lt;br&gt;
+.footer[출처 : &lt;https://r4ds.had.co.nz/introduction.html#what-you-will-learn&gt;]
 
 ---
 class: title-color2
@@ -159,12 +225,210 @@ background-size: cover
 ---
 
 # R 과 생태계 소개
+.content.center[
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+## R <span>&lt;i class="fas  fa-heart faa-bounce animated " style=" color:red;"&gt;&lt;/i&gt;</span> Human
+]
 
-## 내용
+---
+# R 과 생태계 소개
+
+## 강점
+
+1 . 인덱트가 1로 시작함
+
+
+```r
+num &lt;- 1:10
+num[3]
+```
+
+```
+## [1] 3
+```
+
+---
+# R 과 생태계 소개
+
+## 강점
+
+2 . 패키지 시스템이 단순함
+- 콘솔에서 설치
+- 글로벌 설치가 기본값
+
+```r
+install.packages("tidyverse")
+```
+
+---
+# R 과 생태계 소개
+
+## 강점
+
+3 . 문서등을 사전 검수하는 공식 패키지 저장소 cran
+
+- 등록하는 모든 패키지를 사전 검수함
+- 마이너 버전 호환을 보장하며, 판올림 마다 각 패키지 테스트가 깨지면 알림
+- **?함수명**으로 동작하는 개별 함수 설명서 필수 / 동작 예시 코드 제공
+- 패키지에 따라 비네트(vignettes)라는 이름의 튜토리얼, 워크플로우 설명을 제공
+
+---
+
+class: title-color1
+layout: false
+
+### R은 &lt;U&gt;사용자 친화적&lt;/U&gt;이다.
+
+---
+layout: true
+background-image: url(https://user-images.githubusercontent.com/6179259/48409183-7b941d00-e77e-11e8-81c8-9bf0a8e68792.png)
+background-size: cover
+
+---
+
+# R 과 생태계 소개
+.content.center[
+## R <span>&lt;i class="fas  fa-heart faa-bounce animated " style=" color:red;"&gt;&lt;/i&gt;</span> Local files
+## R <span>&lt;i class="fas  fa-heart faa-bounce animated " style=" color:red;"&gt;&lt;/i&gt;</span> Web data
+## R <span>&lt;i class="fas  fa-heart faa-bounce animated " style=" color:red;"&gt;&lt;/i&gt;</span> Database
+]
+---
+
+# R 과 생태계 소개
+&lt;img src = "https://github.com/leeper/rio/raw/master/man/figures/logo.png" align="right" /&gt;
+## Local files
+
+
+```r
+library(rio)
+dat &lt;- import("path/what/you/read")
+```
+
+csv, xlsx, sav 등 대부분의 입출력을 바로 지원
+
+[writexl](https://github.com/ropensci/writexl) 패키지는 안정적인 엑셀 형식 파일 저장 기능을 제공
+
+---
+
+# R 과 생태계 소개
+
+## Web data
+
+[httr](https://github.com/r-lib/httr) - GET, POST, PUT 등 http 명세에 맞는 요청을 지원    
+[rvest](https://github.com/hadley/rvest) - xml을 **%&gt;%** 이용해 쉽게 처리할 수 있는 함수를 제공    
+[RSelenium](https://github.com/ropensci/RSelenium) - Selenium을 R에서 사용할 수 있게 작성    
 
 
 ---
 
+# R 과 생태계 소개
+
+.pull-left[
+### .small[driver list] .tiny[(DBI supported)]
+- SQLite
+- MySQL(+MariaDB)
+- bigquery
+- Oracle
+- ...
+###.small[\+ noDBI] .tiny[supported]
+- MongoDB
+- Redis
+- CouchDB
+- Elasticsearch 
+- etcd 
+- ...
+]
+
+.pull-right[
+###.small[\+ sergeant] .tiny[(with Apache Drill)]
+- HBase
+- MapR-DB
+- HDFS
+- MapR-FS
+- Amazon S3
+- ...
+###.small[\+ JDBC &amp; ODBC]
+]
+
+---
+
+# R 과 생태계 소개
+.content.center[
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+## R <span>&lt;i class="fas  fa-heart faa-bounce animated " style=" color:red;"&gt;&lt;/i&gt;</span> table
+]
+
+---
+# R 과 생태계 소개
+.content.center[
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+![](https://avatars1.githubusercontent.com/u/22032646?s=200&amp;v=4)
+]
+
+---
+# R 과 생태계 소개
+
+### 파이프 연산자(%&gt;%)
+함수를 중첩해서 사용할 일이 점점 빈번해 짐
+```{}
+plot(diff(log(sample(rnorm(10000,mean=10,sd=1),size=100,replace=FALSE)))
+     ,col="red",type="l")
+```
+
+### %&gt;%를 사용하면 
+.pull-left[
+1. 생각의 순서대로 함수를 작성할 수 있음
+1. 중간 변수 저장을 할 필요가 없음
+1. 순서가 읽이 용이하여 기억하기 좋음
+]
+.pull-right[
+```{}
+rnorm(10000,mean=10,sd=1) %&gt;%
+  sample(size=100,replace=FALSE) %&gt;%
+  log %&gt;%
+  diff %&gt;%
+  plot(col="red",type="l")
+```
+]
+---
+# R 과 생태계 소개
+.content.center[
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+![](https://github.com/tidyverse/dplyr/raw/master/man/figures/logo.png)
+]
+---
+# R 과 생태계 소개
+
+### 데이터를 다루는 7가지 동작
+
+![](https://raw.githubusercontent.com/mrchypark/dabrp_classnote3/master/docs/img/dplyr.png)
+---
+# R 과 생태계 소개
+
+### 코드 품질
+
+읽기 쉬운 코드가 좋은 코드
+
+```r
+popular_dests %&gt;% 
+  filter(arr_delay &gt; 0) %&gt;% 
+  mutate(prop_delay = arr_delay / sum(arr_delay)) %&gt;% 
+  select(year:day, dest, arr_delay, prop_delay)
+```
+
+---
 class: title-color1
 layout: false
 
@@ -184,9 +448,62 @@ background-size: cover
 
 # 휴먼 리더블한 R 도구
 
-## 내용
+&lt;img src = "https://github.com/tidyverse/ggplot2/raw/master/man/figures/logo.png" align="right" /&gt;
+### 차트
+
+색상 팔레트, 테마, autoplot를 지원하는 방대한 생태계 / publish quality
+
+.pull-left[
+```r
+library(ggplot2)
+
+ggplot(mpg, 
+       aes(displ, 
+           hwy, 
+           colour = class)
+       ) + 
+  geom_point()
+```
+]
+.pull-right[
+![](index_files/figure-html/unnamed-chunk-2-1.png)&lt;!-- --&gt;
+]
+
+---
+
+# 휴먼 리더블한 R 도구
+
+&lt;img src = "https://user-images.githubusercontent.com/6179259/48444652-db6ae200-e7d7-11e8-867b-98594162a81d.png" align="right" /&gt;
+### MS office
+
+Presentation as Code
+
+R code로 Word와 Power Point 결과물을 작성
 
 
+---
+
+# 휴먼 리더블한 R 도구
+
+&lt;img src = "https://user-images.githubusercontent.com/6179259/48445348-b37c7e00-e7d9-11e8-903b-1b3b22d3c880.png" align="right" width = 50%/&gt;
+### rmd 기반 문서
+
+Rmd를 기반으로 출판 저작물 작성
+
+publish as Code
+
+논문([rticles](https://github.com/rstudio/rticles))    
+책([bookdown](https://github.com/rstudio/bookdown))    
+블로그([blogdown](https://github.com/rstudio/blogdown), [radix](https://github.com/rstudio/radix))    
+등
+
+
+---
+# 휴먼 리더블한 R 도구
+
+### Publish Quality Chart
+### Presentation as Code
+### Publish as Code
 
 ---
 class: title-color2
@@ -202,8 +519,21 @@ background-size: cover
 
 # 머신 리더블한 api 서버
 
-## 내용
+### web api 
 
+- json, xml 등 code에서 처리하기 좋은 포멧의 데이터로 통신
+- gRPC, http 명세 등 통신 프로토콜 정의
+
+.content.center[
+![](http://thefoxlab.com/upload/technology_icon/API-Development.png)
+]
+
+
+---
+class: title-color3
+layout: false
+
+### R의 결과물로 &lt;U&gt;api 서버&lt;/U&gt;를 만들 수는 없을까
 
 ---
 
@@ -213,6 +543,26 @@ layout: false
 # plumber 소개
 
 ---
+layout: true
+background-image: url(https://user-images.githubusercontent.com/6179259/48409183-7b941d00-e77e-11e8-81c8-9bf0a8e68792.png)
+background-size: cover
+---
+&lt;br&gt;
+&lt;br&gt;
+![](https://user-images.githubusercontent.com/6179259/48446703-48cd4180-e7dd-11e8-847e-c39a8ca31936.png)
+
+```r
+#* Echo back the input
+#* @param msg The message to echo
+#* @get /echo
+function(msg=""){
+  list(msg = paste0("The message is: '", msg, "'"))
+}
+
+```
+
+---
+
 class: title-color2
 layout: false
 
@@ -226,8 +576,74 @@ background-size: cover
 
 # 함수 정의 방식의 api 작성
 
-## 내용
+### 함수 정의와 같은 문법
 
+패키지 작성시 사용하는 roxygen 패키지 문법을 사용하여 코드내 문서화
+
+```r
+#' Return the sum of two numbers         # endpoint 설명
+#' @param a The first number to add      # params 이름과 설명
+#' @param b The second number to add     # endpoint 정의
+#' @post /sum                            # 함수 작성
+sum_api &lt;- function(a, b){
+  as.numeric(a) + as.numeric(b)
+}
+```
+
+---
+
+# 함수 정의 방식의 api 작성
+
+### 실행방법
+
+```r
+library(plumber)
+plumb("plumber.R")$run()
+```
+
+
+---
+# 함수 정의 방식의 api 작성
+
+### 실행방법2
+
+![](https://user-images.githubusercontent.com/6179259/48447367-0e64a400-e7df-11e8-9e11-cd8d026c786b.png)
+
+---
+# 함수 정의 방식의 api 작성
+
+
+.content.center[
+![](https://user-images.githubusercontent.com/6179259/48447464-4e2b8b80-e7df-11e8-880a-889f8ac150f9.png)
+]
+---
+# 함수 정의 방식의 api 작성
+
+### swagger 지원
+
+![](https://user-images.githubusercontent.com/6179259/48447538-8337de00-e7df-11e8-92b8-95abefa46003.png)
+
+---
+# 함수 정의 방식의 api 작성
+
+### swagger 내 문서화 및 테스트
+
+![](https://user-images.githubusercontent.com/6179259/48447637-cb570080-e7df-11e8-982e-6e8eb80faedb.png)
+
+---
+# 막간 기능
+
+### 다이나믹 라우트
+
+**&lt;id:int&gt;** 로 작성하여 타입을 지정할 수 있음. 지정하지 않으면 모두 글자이며, bool, numeric, int 등 지원
+
+```r
+#' Lookup a user
+#' @get /users/&lt;id&gt;
+function(id){
+  subset(users, uid==id)
+}
+```
 
 ---
 class: title-color2
@@ -243,14 +659,60 @@ background-size: cover
 
 # Serializers 
 
-## 내용
+### 다양한 방식을 지원
 
+서버에서 지원하기를 기대하는 동작들을 거의 지원함.
+
+1. 텍스트
+1. 이미지(jpg, png)
+1. htmlwidget
+
+---
+
+# Serializers 
+
+### 이미지
+
+브라우저를 통해 이미지 결과물을 전송
+
+```r
+#* Plot a histogram
+#* @png
+#* @get /plot
+function() {
+    rand &lt;- rnorm(100)
+    hist(rand)
+}
+```
+
+---
+
+# Serializers 
+
+### htmlwidget
+
+R에 htmlwidget을 이용해 동적 문서 작성 패키지의 결과물을 전송할 수 있음.
+
+```r
+library(dygraphs)
+#' @get /spots/&lt;from&gt;/&lt;to&gt;/graph
+#' @serializer htmlwidget
+function(from, to){
+  dygraph(datasets::sunspots, main = "썬스팟 데이터 셋") %&gt;%
+    dyRangeSelector(dateWindow = c(
+      paste0(from, "-01-01"),
+      paste0(to, "-12-31")
+    ))
+}
+```
 
 ---
 class: title-color2
 layout: false
 
 # 테스트 방법
+
+## 테스트를 추가해 봅시다.
 
 ---
 layout: true
@@ -260,7 +722,78 @@ background-size: cover
 
 # 테스트 방법
 
-## 내용
+### 테스트를 위한 프로젝트 구조 예시
+
+![](https://user-images.githubusercontent.com/6179259/48448786-74ebc100-e7e3-11e8-8dc2-44ba05837a75.png)
+
+---
+# 테스트 방법
+
+### 함수 이름을 작성
+
+테스트 코드에서 호출하기 위해 이름을 작성해야 함.
+
+![](https://user-images.githubusercontent.com/6179259/48449933-8cc54400-e7e7-11e8-8c92-f77f8f84926d.png)
+
+---
+# 테스트 방법
+
+### 테스트 환경 설정
+
+![](https://user-images.githubusercontent.com/6179259/48448976-0f4c0480-e7e4-11e8-8c38-37a2a1438f09.png)
+
+
+---
+# 테스트 방법
+
+### 테스트 케이스 작성
+
+![](https://user-images.githubusercontent.com/6179259/48449028-3f93a300-e7e4-11e8-87d5-5defa85b8056.png)
+
+---
+# 테스트 방법
+
+### 함수로 작성된 파일들을 실행할 스크립트
+
+![](https://user-images.githubusercontent.com/6179259/48449049-5639fa00-e7e4-11e8-8d2a-558212e49e35.png)
+
+---
+# 테스트 방법
+
+### DESCRIPTION
+
+DESCRIPTION 파일은 프로젝트가 패키지임을 인식하기 위해 꼭 필요하기 때문에 error가 발생하지 않을 최소한의 가짜 정보를 입력
+
+```sh
+Package: arbitrary
+Title: Does not matter.
+Version: 0.0.1
+```
+
+---
+# 테스트 방법
+
+### Build 패널
+
+![](https://user-images.githubusercontent.com/6179259/48449171-d3fe0580-e7e4-11e8-8185-d2a748ccb473.png)
+
+---
+# 테스트 방법
+
+### 테스트 결과
+
+![](https://user-images.githubusercontent.com/6179259/48449206-f98b0f00-e7e4-11e8-8a02-713bc39f0425.png)
+
+---
+# 테스트 방법
+
+### CI에 올리기
+
+R은 travis-ci, gitlab appveyor 등의 CI를 지원함.
+
+배포를 다양한 환경에 할 것이 아니라면 각 상황에 맞는 툴을 사용할 것.
+
+![](https://user-images.githubusercontent.com/6179259/48450283-001b8580-e7e9-11e8-8ec5-aabe9f06f830.png)
 
 
 ---
@@ -268,6 +801,8 @@ class: title-color2
 layout: false
 
 # 배포 방법
+
+## 역시 환경 격리에는 docker 입니다.
 
 ---
 layout: true
@@ -279,6 +814,9 @@ background-size: cover
 
 ## 내용
 
+---
+# 배포 방법
+![](https://cdn-images-1.medium.com/max/1000/1*6dNQ6368kw6bZlG_mtAxgg.png)
 
 ---
 
@@ -337,82 +875,6 @@ background-size: cover
 # 마치며
 
 ## 내용
-
-
-
-
-
-
-
-
-
----
-![](https://cdn-images-1.medium.com/max/1000/1*6dNQ6368kw6bZlG_mtAxgg.png)
----
-
-
-
-
-
-
-
-
-
-
-
----
-
-class: title-color1
-layout: false
-
-# 안녕 하세요 안 녕요 하녕 하세 세요안녕 ==하세요안녕 하세요안녕 하세요
-## 2번째 줄 2번째 줄2번째 줄2번째 줄2번째 줄2번째 줄2번째 줄2번째 줄2번째 줄2번째 줄2번째 줄2번째 줄
-
----
-layout: true
-
-background-image: url(https://user-images.githubusercontent.com/6179259/48409183-7b941d00-e77e-11e8-81c8-9bf0a8e68792.png)
-background-size: cover
----
-
-class: title-color1
-layout: false
-
-### 안녕 하세요안녕 하세 녕 하세요안녕 하세요안안녕 &lt;U&gt;하세요안녕 하세요세요안녕 하세요세&lt;/U&gt;
-
----
-layout: true
-
-background-image: url(https://user-images.githubusercontent.com/6179259/48409183-7b941d00-e77e-11e8-81c8-9bf0a8e68792.png)
-background-size: cover
----
-class: title-color2
-layout: false
-
-# 안녕 하세요 안 녕요  하녕 하세 세요안녕 ==하세요안녕 하세요안녕 하세요
-## 2번째 줄 2번째 줄2번째 줄2번째 줄2번째 줄2번째 줄2번째 줄2번째 줄2번째 줄2번째 줄2번째 줄2번째 줄
-
----
-layout: true
-
-background-image: url(https://user-images.githubusercontent.com/6179259/48409183-7b941d00-e77e-11e8-81c8-9bf0a8e68792.png)
-background-size: cover
----
-class: title-color3
-layout: false
-
-### 안녕 하세요 안녕 하세 녕 하세요안녕 하세요안안녕 &lt;U&gt;하세요안녕 하세요세요안녕 하세요세&lt;/U&gt;
-
----
-layout: true
-
-background-image: url(https://user-images.githubusercontent.com/6179259/48409183-7b941d00-e77e-11e8-81c8-9bf0a8e68792.png)
-background-size: cover
----
-
-# 이거 고치자
-
-## 이거 다음에
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
