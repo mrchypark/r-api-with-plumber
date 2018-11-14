@@ -59,8 +59,8 @@ background-size: cover
     - 배포 방법
 
 - 머신러닝 서비스를 위해
-    - DataOps 란
-    - 지속적 학습 모델을 위한 구조
+    - 고려해야 할 점
+    - 지속적 학습을 위한 구조
 
 - 마치며
 ]
@@ -291,7 +291,7 @@ background-size: cover
 ---
 
 # R 과 생태계 소개
-<img src = "https://github.com/leeper/rio/raw/master/man/figures/logo.png" align="right" />
+<img src = "https://github.com/leeper/rio/raw/master/man/figures/logo.png" align="right"  width = 20%/>
 ## Local files
 
 
@@ -441,7 +441,7 @@ background-size: cover
 
 # 휴먼 리더블한 R 도구
 
-<img src = "https://github.com/tidyverse/ggplot2/raw/master/man/figures/logo.png" align="right" />
+<img src = "https://github.com/tidyverse/ggplot2/raw/master/man/figures/logo.png" align="right" width = 20% />
 ### 차트
 
 색상 팔레트, 테마, autoplot를 지원하는 방대한 생태계 / publish quality
@@ -475,7 +475,7 @@ ggplot(mpg,
 
 # 휴먼 리더블한 R 도구
 
-<img src = "https://user-images.githubusercontent.com/6179259/48444652-db6ae200-e7d7-11e8-867b-98594162a81d.png" align="right" />
+<img src = "https://user-images.githubusercontent.com/6179259/48444652-db6ae200-e7d7-11e8-867b-98594162a81d.png" align="right" width = 20% />
 ### MS office
 
 Presentation as Code
@@ -503,9 +503,11 @@ publish as Code
 ---
 # 휴먼 리더블한 R 도구
 
-### Publish Quality Chart
-### Presentation as Code
-### Publish as Code
+### as Code
+
+Publish Quality Chart 패키지를 활용하여 출판과 보고서를 code로 관리하면 분석 결과와 발표 자료를 통일 시킬 수 있음.
+
+code를 수정해야 하는 소스로, .docx / .pptx / .xlsx / .html 등의 rendering 결과물은 손을 대지 않는 습관을 들이는 것이 중요함.
 
 ---
 class: title-color2
@@ -733,8 +735,6 @@ background-size: cover
 
 ### 함수 이름을 작성
 
-테스트 코드에서 호출하기 위해 이름을 작성해야 함.
-
 ![](https://user-images.githubusercontent.com/6179259/48449933-8cc54400-e7e7-11e8-8c92-f77f8f84926d.png)
 
 ---
@@ -820,9 +820,46 @@ background-size: cover
 
 ---
 # 배포 방법
+<img src = "https://github.com/o2r-project/containerit/raw/master/inst/logo.png" align="right" width = 20% />
+### containerit
 
-### 
+[containerit](https://github.com/o2r-project/containerit)은 [sysreqs](https://sysreqs.r-hub.io/) 프로젝트에 기반하고 있음.
 
+[rocker](https://hub.docker.com/r/rocker/rstudio/)는 r-base의 안정 버전 docker 이미지를 제공하는 프로젝트.
+
+debian 기반의 이미지로 환경이 통일되어 있으므로 각 패키지의 시스템 수준 의존성 정보 제공 프로젝트인 [sysreqs](https://sysreqs.r-hub.io/)가 가능해짐.
+
+[containerit](https://github.com/o2r-project/containerit)은 연구재현성을 위해 개발 중
+
+---
+# 배포 방법
+
+### rocker
+
+![](https://user-images.githubusercontent.com/6179259/48450847-28a47f00-e7eb-11e8-885e-8c88540ff86f.png)
+
+---
+# 배포 방법
+
+### sysreqs
+
+![](https://user-images.githubusercontent.com/6179259/48451662-bc2b7f00-e7ee-11e8-8e50-a10ac21df467.png)
+
+---
+# 배포 방법
+
+### Dockerfile
+
+![](https://user-images.githubusercontent.com/6179259/48450723-b0d65480-e7ea-11e8-8912-a05cf6bdd8ce.png)
+
+---
+
+class: title-color3
+layout: false
+
+### 이걸로 끝이라고는...
+
+### 상황에 맞게 <U>수정</U>해서 사용해야 합니다.
 
 ---
 
@@ -830,12 +867,13 @@ class: title-color1
 layout: false
 
 # 머신러닝 서비스를 위해
+## 
 
 ---
 class: title-color2
 layout: false
 
-# DataOps란
+# 고려해야 할 점
 
 ---
 layout: true
@@ -843,16 +881,55 @@ background-image: url(https://user-images.githubusercontent.com/6179259/48409183
 background-size: cover
 ---
 
-# DataOps란 
+# 고려해야 할 점
 
-## 내용
+### 팀의 크기
 
+머신러닝 서비스를 위해 최소 3인(도메인 전문가, 머신러닝 엔지니어, 소프트웨어 엔지니어)이 필요함
+
+언제나처럼 제한된 자원 내에서 혼자 진행해야 할 수도 있음
+
+--
+
+상황에 따라 데이터 과학자에 해당하는 사람이 얼마나 알고 있어야 하는가?
+
+혹은 자신에게 부족한 부분에서 어떻게 조직내 협업을 이끌어 낼 것인가?
+
+---
+# 고려해야 할 점
+
+### 얼마나 자주 변경해야 하는가
+
+머신러닝의 성능은 학습 데이터에 의존적임
+
+데이터의 유효기간이 지나거나, 새로운 고객군이 기존 고객군과 성격이 달라질 수 있음.
+
+--
+
+얼마나 자주 학습해야 할까?
+
+테스트는 어떻게 진행해야 할까?
+
+---
+# 고려해야 할 점
+
+### 사람의 개입
+
+머신러닝 프로젝트는 완전 자동화를 목표로 하는 것은 위험함
+
+특히 새로운 변수를 발굴하거나, 알고리즘을 바꾸는 등의 상황은 전부 사람이 판단해야 함
+
+--
+
+어떤 작업을 사람이 판단해야 안전한가?
+
+사람의 작업이 어떻게 설계되어야 scale up에 유리한가?
 
 ---
 class: title-color2
 layout: false
 
-# 지속적 학습 모델을 위한 구조
+# 지속적 학습을 위한 구조
 
 ---
 layout: true
@@ -860,10 +937,32 @@ background-image: url(https://user-images.githubusercontent.com/6179259/48409183
 background-size: cover
 ---
 
-# 지속적 학습 모델을 위한 구조
+# 지속적 학습을 위한 구조
 
-## 내용
+### 지속적 학습에 대해 고려해야 할 사항
 
+데이터 확보: 보통 지도 학습 모델을 많이 사용하기 때문에 확보 비용이 매우 높음
+
+학습: 데이터 상황에 맞는 알고리즘 및 변수 선택 등
+
+배포: 테스트 케이스나 정확도를 기준으로 배포 모델을 결정
+
+---
+# 지속적 학습을 위한 구조
+### 수동 학습과 수동 배포
+
+서비스 초기에는 모두 수동 작업이 필요함
+
+![](https://user-images.githubusercontent.com/6179259/48452423-6d7fe400-e7f2-11e8-8b6e-d8216dd84cb7.png)
+
+---
+# 지속적 학습을 위한 구조
+
+### 지속적 데이터 확보
+
+사용자 이벤트를 기반으로 지도학습용 데이터 파이프라인 구축. 가능한한 사람 손을 타지 않거나, 타는 것이 필수인 구조인 것이 좋음
+
+![](https://user-images.githubusercontent.com/6179259/48452574-0d3d7200-e7f3-11e8-8370-3815298eb94b.png)
 
 ---
 
@@ -880,5 +979,35 @@ background-size: cover
 
 # 마치며
 
-## 내용
+### plumber는 어느 위치에 있는가
+
+R의 위치와 함께 plumber는 빠르게 프로토 타이핑이 가능
+
+빠르게 변하고 리소스가 부족한 경우 적합할 수 있음
+
+회사내 튜터가 있다면 도메인 전문가가 도전해 볼만함
+
+--
+
+물론 배포 등은 엔지니어의 도움을 받아야
+
+---
+
+class: title-color1
+layout: false
+
+### Q&A
+
+
+
+
+
+
+
+
+
+
+
+
+
 
